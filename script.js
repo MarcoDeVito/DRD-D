@@ -11,16 +11,14 @@ if (itaSave == 'true') {
 else {
     ita.checked = false;
 }
-let index = localStorage.getItem('Index');
-        let Danni = localStorage.getItem('Danni');
-        selected.selectedIndex = index
-        if (Danni != 0) { totalDamage.value = Danni; }
-        let init = localStorage.getItem('Iniziativa');
+let Danni = localStorage.getItem('Danni');
+if (Danni != 0) { totalDamage.value = Danni; }
+let init = localStorage.getItem('Iniziativa');
 
-        if (init) {
-            diceRes.innerText = init
-            diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
-        }
+if (init) {
+    diceRes.innerText = init
+    diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
+}
 
 
 fetch('monster2.json')
@@ -42,7 +40,7 @@ fetch('monster2.json')
             });
         }
         else {
-            
+
             data.sort((a, b) => a['mostro'].localeCompare(b['mostro']));
             const selectCA = document.getElementById('monster-select-ca');
             data.forEach(monster => {
@@ -54,8 +52,9 @@ fetch('monster2.json')
 
             });
         }
+        let index = localStorage.getItem('Index');
+        selected.selectedIndex = index
 
-       
     });
 
 function checkMonsterCA() {
@@ -64,6 +63,7 @@ function checkMonsterCA() {
         let selectedValue = parseInt(selected.value);
         let number = parseInt(document.getElementById('monster-number').value);
         let monsterCa = document.getElementById('result-ca');
+        monsterNumber.value="";
 
 
 
