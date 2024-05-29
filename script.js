@@ -1,8 +1,11 @@
 let selected = document.getElementById('monster-select-ca');
 let totalDamage = document.querySelector('#total-damage')
 let monsterNumber = document.querySelector('#monster-number')
+let sommaDanno = document.querySelector('#nuovoDanno')
 let diceRes = document.getElementById('dice-result');
 let ita = document.querySelector('#ita');
+
+
 let itaSave = localStorage.getItem('ITA');
 if (itaSave == 'true') {
 
@@ -123,7 +126,7 @@ function dice() {
 }
 function somma() {
 
-    let sommaDanno = document.querySelector('#nuovoDanno')
+    
     if (sommaDanno.value) {
 
         let dannoTotale = parseInt(totalDamage.value);
@@ -192,6 +195,20 @@ monsterNumber.addEventListener("keypress", function (event) {
         event.preventDefault();
         // Trigger the button element with a click
         document.querySelector("#btnIsHit").click();
+    }
+});
+sommaDanno.addEventListener("keypress", function (event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        if(sommaDanno.value){
+            event.preventDefault();
+            document.querySelector("#sommaDanno").click();
+        }
+        else{
+            event.preventDefault();
+            document.querySelector("#btnIsDead").click();
+        }
+       
     }
 });
 
