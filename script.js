@@ -1,15 +1,32 @@
 let selected = document.getElementById('monster-select-ca');
-totalDamage = document.querySelector('#total-damage')
-monsterNumber = document.querySelector('#monster-number')
+let totalDamage = document.querySelector('#total-damage')
+let monsterNumber = document.querySelector('#monster-number')
 let diceRes = document.getElementById('dice-result');
+let ita = document.querySelector('#ita');
+
 
 fetch('monster2.json')
     .then(response => response.json())
     .then(data => {
-        data.sort((a, b) => a['mostro'].localeCompare(b['mostro']));
+        let itaSave = localStorage.getItem('ITA');
+        if(itaSave=='true'){
+
+            ita.checked=true;
+            data.sort((a, b) => a['ITA'].localeCompare(b['ITA']));
+            const selectCA = document.getElementById('monster-select-ca');
+            data.forEach(monster => {
+                const optionCA = document.createElement('option');
+                optionCA.value = monster['Classe Armatura (CA)'];
+                optionCA.textContent = monster.ITA;
+                optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
+                selectCA.appendChild(optionCA);
+    
+            });
+        }
+        else {
+            ita.checked=false;
+            data.sort((a, b) => a['mostro'].localeCompare(b['mostro']));
         const selectCA = document.getElementById('monster-select-ca');
-
-
         data.forEach(monster => {
             const optionCA = document.createElement('option');
             optionCA.value = monster['Classe Armatura (CA)'];
@@ -18,12 +35,19 @@ fetch('monster2.json')
             selectCA.appendChild(optionCA);
 
         });
+        }
+        
+
+        
+
+
+        
         let index = localStorage.getItem('Index');
         let Danni = localStorage.getItem('Danni');
         selected.selectedIndex = index
         if (Danni != 0) { totalDamage.value = Danni; }
         let init=localStorage.getItem('Iniziativa');
-        console.log(init);
+        
         if (init) {
             diceRes.innerText=init
             diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
@@ -98,7 +122,7 @@ function somma() {
     sommaDanno = document.querySelector('#nuovoDanno')
     dannoTotale = parseInt(totalDamage.value);
     nuovoDanno = parseInt(sommaDanno.value);
-    console.log(nuovoDanno);
+    
     totalDamage.value = dannoTotale + nuovoDanno;
     sommaDanno.value = 0;
     localStorage.setItem('Danni', totalDamage.value);
@@ -124,6 +148,15 @@ selected.addEventListener("input", () => {
 totalDamage.addEventListener("input", () => {
 
     localStorage.setItem('Danni', totalDamage.value);
+
+
+})
+
+ita.addEventListener("input", () => {
+
+    localStorage.setItem('ITA', ita.checked);
+    let itaSave = localStorage.getItem('ITA');
+    
 
 
 })
