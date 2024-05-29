@@ -28,11 +28,11 @@
 
                     </div>
                     <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="clear" onclick="clearHit()">X</button>
-                        <input type="number" id="monster-number" class="form-control" min="1" placeholder="1">
+                        <button id="btnClearHit" class="btn btn-outline-secondary" type="button" id="clear" onclick="clearHit()">X</button>
+                        <input type="number" id="monster-number" class="form-control" min="1" max="40" placeholder="1">
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-primary w-100"
+                        <button type="button" id="btnIsHit" class="btn btn-primary w-100"
                             onclick="checkMonsterCA()">Colpisce?</button>
                         <p id="result-ca" class="mt-2 text-center"></p>
                     </div>
@@ -40,7 +40,7 @@
                         <label for="total-damage" class="form-label">Danno Totale:</label>
                     </div>
                     <div class="input-group mb-3">
-                        <button class="btn btn-outline-secondary" type="button" id="clear" onclick="clearDamage()">X</button>
+                        <button id="btnClearDamage" class="btn btn-outline-secondary" type="button" id="clear" onclick="clearDamage()">X</button>
                         <input type="number" id="total-damage" class="form-control" min="0" placeholder="0">
                         <button class="btn btn-outline-secondary" type="button" id="sommaDanno"
                             onclick="somma()">+</button>
@@ -48,7 +48,7 @@
                             placeholder="0">
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-primary w-100" onclick="checkMonsterPF()">E'
+                        <button type="button" id="btnIsDead" class="btn btn-primary w-100" onclick="checkMonsterPF()">E'
                             Morto?</button>
                         <p id="result-pf" class="mt-2 text-center"></p>
                     </div>

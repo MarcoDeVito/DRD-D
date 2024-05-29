@@ -31,52 +31,55 @@ fetch('monster2.json')
     });
 
 function checkMonsterCA() {
+    if(monsterNumber.value){
 
-    let selectedValue = parseInt(selected.value);
-    let number = parseInt(document.getElementById('monster-number').value);
-    let monsterCa = document.getElementById('result-ca');
-    let selectedOption = selected.options[selected.selectedIndex];
-    let extraInfoPF = selectedOption.getAttribute("PF");
-
-    if (number >= selectedValue) {
-        monsterCa.innerText = 'Colpito';
-        monsterCa.classList.remove("bg-danger");
-        monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
-
-    }
-    else {
-
-        monsterCa.innerText = 'Mancato';
-        monsterCa.classList.remove("bg-success");
-        monsterCa.classList.add("border", "rounded", "bg-danger", "p-2");
-
+        let selectedValue = parseInt(selected.value);
+        let number = parseInt(document.getElementById('monster-number').value);
+        let monsterCa = document.getElementById('result-ca');
+        
+        
+    
+        if (number >= selectedValue) {
+            monsterCa.innerText = 'Colpito';
+            monsterCa.classList.remove("bg-danger");
+            monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
+    
+        }
+        else {
+    
+            monsterCa.innerText = 'Mancato';
+            monsterCa.classList.remove("bg-success");
+            monsterCa.classList.add("border", "rounded", "bg-danger", "p-2");
+    
+        }
     }
 }
 
 function checkMonsterPF() {
-
-
-
-    let selectedOption = selected.options[selected.selectedIndex];
-    let extraInfoPF = selectedOption.getAttribute("PF");
-
-
-    let totalDamage = parseInt(document.getElementById('total-damage').value);
-
-    let monsterPf = document.getElementById('result-pf');
-    if (totalDamage < extraInfoPF) {
-        monsterPf.innerText = 'Vivo';
-        monsterPf.classList.remove("bg-danger");
-        monsterPf.classList.add("border", "rounded", "bg-success", "p-2");
-
-
+    if(totalDamage.value){
+        
+        let selectedOption = selected.options[selected.selectedIndex];
+        let extraInfoPF = selectedOption.getAttribute("PF");
+    
+    
+        let totalDamage = parseInt(document.getElementById('total-damage').value);
+    
+        let monsterPf = document.getElementById('result-pf');
+        if (totalDamage < extraInfoPF) {
+            monsterPf.innerText = 'Vivo';
+            monsterPf.classList.remove("bg-danger");
+            monsterPf.classList.add("border", "rounded", "bg-success", "p-2");
+    
+    
+        }
+        else {
+    
+            monsterPf.innerText = 'Morto';
+            monsterPf.classList.remove("bg-success");
+            monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
+        }
     }
-    else {
 
-        monsterPf.innerText = 'Morto';
-        monsterPf.classList.remove("bg-success");
-        monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
-    }
 
 
 
@@ -125,3 +128,42 @@ totalDamage.addEventListener("input", () => {
 
 })
 
+totalDamage.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.querySelector("#btnIsDead").click();
+    }
+      });
+
+  monsterNumber.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.querySelector("#btnIsHit").click();
+    }
+  });
+
+totalDamage.addEventListener("keydown", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Delete") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.querySelector("#btnClearDamage").click();
+    }
+  });
+
+  monsterNumber.addEventListener("keydown", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Delete") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.querySelector("#btnClearHit").click();
+    }
+  });
