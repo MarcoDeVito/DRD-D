@@ -1,7 +1,7 @@
 [
     {
      "mostro": "Goblin Boss (goblin capo)",
-     "ITA": "goblin capo",
+     "ITA": "Goblin capo",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 21,
      "Grado Sfida (CR)": 1,
@@ -17,7 +17,7 @@
     },
     {
      "mostro": "Kuo-toa Whip (kuo-toa sovrintendente)",
-     "ITA": "kuo-toa sovrintendente",
+     "ITA": "Kuo-toa sovrintendente",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 65,
      "Grado Sfida (CR)": 1,
@@ -33,7 +33,7 @@
     },
     {
      "mostro": "Mimic",
-     "ITA": "mimic",
+     "ITA": "Mimic",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 58,
      "Grado Sfida (CR)": 2,
@@ -49,7 +49,7 @@
     },
     {
      "mostro": "Druid (druido)",
-     "ITA": "druido",
+     "ITA": "Druido",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 27,
      "Grado Sfida (CR)": 2,
@@ -65,7 +65,7 @@
     },
     {
      "mostro": "Polar Bear (orso delle caverne)",
-     "ITA": "orso polare (orso delle caverne)",
+     "ITA": "Orso polare (orso delle caverne)",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 42,
      "Grado Sfida (CR)": 2,
@@ -81,7 +81,7 @@
     },
     {
      "mostro": "Orc Eye of Gruumsh (Occhio di Gruumsh)",
-     "ITA": "orco Occhio di Gruumsh",
+     "ITA": "Orco Occhio di Gruumsh",
      "Classe Armatura (CA)": 16,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 2,
@@ -97,7 +97,7 @@
     },
     {
      "mostro": "Hobgoblin Captain (hobgoblin capitano)",
-     "ITA": "hobgoblin capitano",
+     "ITA": "Hobgoblin capitano",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 39,
      "Grado Sfida (CR)": 3,
@@ -113,7 +113,7 @@
     },
     {
      "mostro": "Quaggoth Thonot",
-     "ITA": "quaggoth thonot",
+     "ITA": "Quaggoth thonot",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 3,
@@ -129,7 +129,7 @@
     },
     {
      "mostro": "Goblin",
-     "ITA": "goblin",
+     "ITA": "Goblin",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 7,
      "Grado Sfida (CR)": "1\/4",
@@ -145,7 +145,7 @@
     },
     {
      "mostro": "Bone Naga (naga d’ossa)",
-     "ITA": "naga d’ossa",
+     "ITA": "Naga d’ossa",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 58,
      "Grado Sfida (CR)": 4,
@@ -161,7 +161,7 @@
     },
     {
      "mostro": "Black Pudding (protoplasma nero)",
-     "ITA": "protoplasma nero",
+     "ITA": "Protoplasma nero",
      "Classe Armatura (CA)": 7,
      "Punti Ferita (PF)": 85,
      "Grado Sfida (CR)": 4,
@@ -177,7 +177,7 @@
     },
     {
      "mostro": "Ghost (fantasma)",
-     "ITA": "fantasma",
+     "ITA": "Fantasma",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 4,
@@ -193,7 +193,7 @@
     },
     {
      "mostro": "Flameskull (teschio infuocato)",
-     "ITA": "teschio infuocato",
+     "ITA": "Teschio infuocato",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 40,
      "Grado Sfida (CR)": 4,
@@ -209,7 +209,7 @@
     },
     {
      "mostro": "Kuo-toa",
-     "ITA": "kuo-toa",
+     "ITA": "Kuo-toa",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 18,
      "Grado Sfida (CR)": "1\/4",
@@ -225,7 +225,7 @@
     },
     {
      "mostro": "Giant Spider (ragni giganti)",
-     "ITA": "ragni giganti",
+     "ITA": "Ragni giganti",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 26,
      "Grado Sfida (CR)": 1,
@@ -241,7 +241,7 @@
     },
     {
      "mostro": "Giant Toad (rospi giganti)",
-     "ITA": "rospi giganti",
+     "ITA": "Rospi giganti",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 39,
      "Grado Sfida (CR)": 1,
@@ -257,7 +257,7 @@
     },
     {
      "mostro": "kuo-toa esecutori",
-     "ITA": "kuo-toa esecutori",
+     "ITA": "Kuo-toa esecutori",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 65,
      "Grado Sfida (CR)": "1",
@@ -273,7 +273,7 @@
     },
     {
      "mostro": "Wraith",
-     "ITA": "wraith",
+     "ITA": "Wraith",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 67,
      "Grado Sfida (CR)": 5,
@@ -289,7 +289,7 @@
     },
     {
      "mostro": "Umber Hulk",
-     "ITA": "umber hulk",
+     "ITA": "Umber hulk",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 93,
      "Grado Sfida (CR)": 5,
@@ -305,7 +305,7 @@
     },
     {
      "mostro": "Xorn",
-     "ITA": "xorn",
+     "ITA": "Xorn",
      "Classe Armatura (CA)": 19,
      "Punti Ferita (PF)": 73,
      "Grado Sfida (CR)": 5,
@@ -321,7 +321,7 @@
     },
     {
      "mostro": "Fustigatore",
-     "ITA": "fustigatore",
+     "ITA": "Fustigatore",
      "Classe Armatura (CA)": 20,
      "Punti Ferita (PF)": 93,
      "Grado Sfida (CR)": "5",
@@ -337,7 +337,7 @@
     },
     {
      "mostro": "Otyugh",
-     "ITA": "otyugh",
+     "ITA": "Otyugh",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 114,
      "Grado Sfida (CR)": 5,
@@ -353,7 +353,7 @@
     },
     {
      "mostro": "Drow Elite Warrior (drow combattenti scelti)",
-     "ITA": "drow combattenti scelti",
+     "ITA": "Drow combattenti scelti",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 71,
      "Grado Sfida (CR)": 5,
@@ -369,7 +369,7 @@
     },
     {
      "mostro": "Zombie Beholder (zombi beholder)",
-     "ITA": "zombi beholder",
+     "ITA": "Zombi beholder",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 93,
      "Grado Sfida (CR)": 5,
@@ -385,7 +385,7 @@
     },
     {
      "mostro": "Gray Ooze (melme grigie)",
-     "ITA": "melme grigie",
+     "ITA": "Melme grigie",
      "Classe Armatura (CA)": 8,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": "1\/2",
@@ -401,7 +401,7 @@
     },
     {
      "mostro": "Magma Mephit (mephit del magma)",
-     "ITA": "mephit del magma",
+     "ITA": "Mephit del magma",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": "1\/2",
@@ -417,7 +417,7 @@
     },
     {
      "mostro": "Mantiscuri",
-     "ITA": "mantiscuri",
+     "ITA": "Mantiscuri",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": "1\/2",
@@ -433,7 +433,7 @@
     },
     {
      "mostro": "Gibbering Mouther (fauci gorgoglianti)",
-     "ITA": "fauci gorgoglianti",
+     "ITA": "Fauci gorgoglianti",
      "Classe Armatura (CA)": 9,
      "Punti Ferita (PF)": 67,
      "Grado Sfida (CR)": 2,
@@ -449,7 +449,7 @@
     },
     {
      "mostro": "Gelatinous Cube (cubi gelatinosi)",
-     "ITA": "cubi gelatinosi",
+     "ITA": "Cubi gelatinosi",
      "Classe Armatura (CA)": 6,
      "Punti Ferita (PF)": 84,
      "Grado Sfida (CR)": 2,
@@ -465,7 +465,7 @@
     },
     {
      "mostro": "Drow Mage (drow mago)",
-     "ITA": "drow mago",
+     "ITA": "Drow mago",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 7,
@@ -481,7 +481,7 @@
     },
     {
      "mostro": "Grick Alpha (grick alfa)",
-     "ITA": "grick alfa",
+     "ITA": "Grick alfa",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 195,
      "Grado Sfida (CR)": 7,
@@ -497,7 +497,7 @@
     },
     {
      "mostro": "Stone Giant (gigante delle pietre)",
-     "ITA": "gigante delle pietre",
+     "ITA": "Gigante delle pietre",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 126,
      "Grado Sfida (CR)": 7,
@@ -513,7 +513,7 @@
     },
     {
      "mostro": "Drow",
-     "ITA": "drow",
+     "ITA": "Drow",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 13,
      "Grado Sfida (CR)": "1\/4",
@@ -529,7 +529,7 @@
     },
     {
      "mostro": "Swarm of Bats (sciami di pipistrelli)",
-     "ITA": "sciami di pipistrelli",
+     "ITA": "Sciami di pipistrelli",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": "1\/4",
@@ -545,7 +545,7 @@
     },
     {
      "mostro": "Troglodyte (trogloditi)",
-     "ITA": "trogloditi",
+     "ITA": "Trogloditi",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 13,
      "Grado Sfida (CR)": "1\/4",
@@ -561,7 +561,7 @@
     },
     {
      "mostro": "Grimlock",
-     "ITA": "grimlock",
+     "ITA": "Grimlock",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 11,
      "Grado Sfida (CR)": "1\/4",
@@ -577,7 +577,7 @@
     },
     {
      "mostro": "Minotaur Skeleton (scheletri minotauri)",
-     "ITA": "scheletri minotauri",
+     "ITA": "Scheletri minotauri",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 67,
      "Grado Sfida (CR)": 2,
@@ -593,7 +593,7 @@
     },
     {
      "mostro": "Carrion Crawler (vermiiena)",
-     "ITA": "vermiiena",
+     "ITA": "Vermiiena",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 51,
      "Grado Sfida (CR)": 2,
@@ -609,7 +609,7 @@
     },
     {
      "mostro": "Ochre Jelly (amebe paglierine)",
-     "ITA": "amebe paglierine",
+     "ITA": "Amebe paglierine",
      "Classe Armatura (CA)": 8,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 2,
@@ -625,7 +625,7 @@
     },
     {
      "mostro": "Nothic",
-     "ITA": "nothic",
+     "ITA": "Nothic",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 2,
@@ -641,7 +641,7 @@
     },
     {
      "mostro": "Ghast",
-     "ITA": "ghast",
+     "ITA": "Ghast",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 36,
      "Grado Sfida (CR)": 2,
@@ -657,7 +657,7 @@
     },
     {
      "mostro": "Orog",
-     "ITA": "orog",
+     "ITA": "Orog",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 42,
      "Grado Sfida (CR)": 2,
@@ -673,7 +673,7 @@
     },
     {
      "mostro": "Fomorian",
-     "ITA": "fomorian",
+     "ITA": "Fomorian",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 149,
      "Grado Sfida (CR)": 8,
@@ -689,7 +689,7 @@
     },
     {
      "mostro": "Cloaker (manto assassino)",
-     "ITA": "manto assassino",
+     "ITA": "Manto assassino",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 78,
      "Grado Sfida (CR)": 8,
@@ -705,7 +705,7 @@
     },
     {
      "mostro": "Mind Flayer Arcanist",
-     "ITA": "mind flayer arcanista",
+     "ITA": "Mind flayer arcanista",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 71,
      "Grado Sfida (CR)": 8,
@@ -721,7 +721,7 @@
     },
     {
      "mostro": "Spirit Naga (naga spirituale)",
-     "ITA": "naga spirituale",
+     "ITA": "Naga spirituale",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 75,
      "Grado Sfida (CR)": 8,
@@ -737,7 +737,7 @@
     },
     {
      "mostro": "Specter (spettri)",
-     "ITA": "spettri",
+     "ITA": "Spettri",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": 1,
@@ -753,7 +753,7 @@
     },
     {
      "mostro": "Water Weird (fatali dell’acqua)",
-     "ITA": "fatali dell’acqua",
+     "ITA": "Fatali dell’acqua",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 58,
      "Grado Sfida (CR)": 3,
@@ -769,7 +769,7 @@
     },
     {
      "mostro": "Grell",
-     "ITA": "grell",
+     "ITA": "Grell",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 55,
      "Grado Sfida (CR)": 3,
@@ -785,7 +785,7 @@
     },
     {
      "mostro": "Ghoul",
-     "ITA": "ghoul",
+     "ITA": "Ghoul",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": 1,
@@ -801,7 +801,7 @@
     },
     {
      "mostro": "Fire Giant (gigante del fuoco)",
-     "ITA": "gigante del fuoco",
+     "ITA": "Gigante del fuoco",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 162,
      "Grado Sfida (CR)": 9,
@@ -817,7 +817,7 @@
     },
     {
      "mostro": "Wight",
-     "ITA": "wight",
+     "ITA": "Wight",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 3,
@@ -833,7 +833,7 @@
     },
     {
      "mostro": "Doppelganger",
-     "ITA": "doppelganger",
+     "ITA": "Doppelganger",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 52,
      "Grado Sfida (CR)": 3,
@@ -849,7 +849,7 @@
     },
     {
      "mostro": "Spectator",
-     "ITA": "spectator",
+     "ITA": "Spectator",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 39,
      "Grado Sfida (CR)": 3,
@@ -865,7 +865,7 @@
     },
     {
      "mostro": "Hook Horror (orrori uncinati)",
-     "ITA": "orrori uncinati",
+     "ITA": "Orrori uncinati",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 75,
      "Grado Sfida (CR)": 3,
@@ -881,7 +881,7 @@
     },
     {
      "mostro": "Minotaur",
-     "ITA": "minotauri",
+     "ITA": "Minotauri",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 76,
      "Grado Sfida (CR)": 3,
@@ -897,7 +897,7 @@
     },
     {
      "mostro": "Aboleth",
-     "ITA": "aboleth",
+     "ITA": "Aboleth",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 135,
      "Grado Sfida (CR)": 10,
@@ -913,7 +913,7 @@
     },
     {
      "mostro": "Shadow (ombre)",
-     "ITA": "ombre",
+     "ITA": "Ombre",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 16,
      "Grado Sfida (CR)": "1\/2",
@@ -929,7 +929,7 @@
     },
     {
      "mostro": "Hobgoblin",
-     "ITA": "hobgoblin",
+     "ITA": "Hobgoblin",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 11,
      "Grado Sfida (CR)": "1\/2",
@@ -945,7 +945,7 @@
     },
     {
      "mostro": "Gas Spore (spore gassose)",
-     "ITA": "spore gassose",
+     "ITA": "Spore gassose",
      "Classe Armatura (CA)": 5,
      "Punti Ferita (PF)": 1,
      "Grado Sfida (CR)": "1\/2",
@@ -961,7 +961,7 @@
     },
     {
      "mostro": "Deep Gnome (gnomi delle profondità)",
-     "ITA": "gnomi delle profondità",
+     "ITA": "Gnomi delle profondità",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 16,
      "Grado Sfida (CR)": "1\/2",
@@ -977,7 +977,7 @@
     },
     {
      "mostro": "Orc (orchi)",
-     "ITA": "orchi",
+     "ITA": "Orchi",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 15,
      "Grado Sfida (CR)": "1\/2",
@@ -993,7 +993,7 @@
     },
     {
      "mostro": "Bugbear",
-     "ITA": "bugbear",
+     "ITA": "Bugbear",
      "Classe Armatura (CA)": 16,
      "Punti Ferita (PF)": 27,
      "Grado Sfida (CR)": 1,
@@ -1009,7 +1009,7 @@
     },
     {
      "mostro": "Behir",
-     "ITA": "behir",
+     "ITA": "Behir",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 168,
      "Grado Sfida (CR)": 11,
@@ -1025,7 +1025,7 @@
     },
     {
      "mostro": "Dao",
-     "ITA": "dao",
+     "ITA": "Dao",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 187,
      "Grado Sfida (CR)": 11,
@@ -1041,7 +1041,7 @@
     },
     {
      "mostro": "Intellect Devourer (divoracervelli)",
-     "ITA": "divoracervelli",
+     "ITA": "Divoracervelli",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 21,
      "Grado Sfida (CR)": 2,
@@ -1057,7 +1057,7 @@
     },
     {
      "mostro": "Orc (orchi)",
-     "ITA": "orchi",
+     "ITA": "Orchi",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 15,
      "Grado Sfida (CR)": "1\/2",
@@ -1073,7 +1073,7 @@
     },
     {
      "mostro": "quaggoth",
-     "ITA": "quaggoth",
+     "ITA": "Quaggoth",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": "2",
@@ -1089,7 +1089,7 @@
     },
     {
      "mostro": "Grick",
-     "ITA": "grick",
+     "ITA": "Grick",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 27,
      "Grado Sfida (CR)": 2,
@@ -1105,7 +1105,7 @@
     },
     {
      "mostro": "Orc (orchi)",
-     "ITA": "orchi",
+     "ITA": "Orchi",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 15,
      "Grado Sfida (CR)": "1\/2",
@@ -1121,7 +1121,7 @@
     },
     {
      "mostro": "Beholder",
-     "ITA": "beholder",
+     "ITA": "Beholder",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 180,
      "Grado Sfida (CR)": 13,
@@ -1137,7 +1137,7 @@
     },
     {
      "mostro": "Vampire Spawn (progenie vampiriche)",
-     "ITA": "progenie vampiriche",
+     "ITA": "Progenie vampiriche",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 82,
      "Grado Sfida (CR)": 5,
@@ -1153,7 +1153,7 @@
     },
     {
      "mostro": "drow combattenti scelti",
-     "ITA": "drow combattenti scelti",
+     "ITA": "Drow combattenti scelti",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 71,
      "Grado Sfida (CR)": "5",
@@ -1169,7 +1169,7 @@
     },
     {
      "mostro": "Chuul",
-     "ITA": "chuul",
+     "ITA": "Chuul",
      "Classe Armatura (CA)": 16,
      "Punti Ferita (PF)": 93,
      "Grado Sfida (CR)": 4,
@@ -1185,7 +1185,7 @@
     },
     {
      "mostro": "Gargoyle",
-     "ITA": "gargoyle",
+     "ITA": "Gargoyle",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 52,
      "Grado Sfida (CR)": 2,
@@ -1201,7 +1201,7 @@
     },
     {
      "mostro": "Hobgoblin",
-     "ITA": "hobgoblin",
+     "ITA": "Hobgoblin",
      "Classe Armatura (CA)": 18,
      "Punti Ferita (PF)": 11,
      "Grado Sfida (CR)": "1\/2",
@@ -1217,7 +1217,7 @@
     },
     {
      "mostro": "Duergar",
-     "ITA": "duergar",
+     "ITA": "Duergar",
      "Classe Armatura (CA)": 16,
      "Punti Ferita (PF)": 26,
      "Grado Sfida (CR)": 1,
@@ -1233,7 +1233,7 @@
     },
     {
      "mostro": "Fire Snake (serpenti di fuoco)",
-     "ITA": "serpenti di fuoco",
+     "ITA": "Serpenti di fuoco",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": 1,
@@ -1249,7 +1249,7 @@
     },
     {
      "mostro": "Ettin",
-     "ITA": "ettin",
+     "ITA": "Ettin",
      "Classe Armatura (CA)": 12,
      "Punti Ferita (PF)": 85,
      "Grado Sfida (CR)": 4,
@@ -1265,7 +1265,7 @@
     },
     {
      "mostro": "Cyclops (ciclopi)",
-     "ITA": "ciclopi",
+     "ITA": "Ciclopi",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 138,
      "Grado Sfida (CR)": 6,
@@ -1281,7 +1281,7 @@
     },
     {
      "mostro": "Veteran Dwarf (nani cacciatori)",
-     "ITA": "nani cacciatori (veterani)",
+     "ITA": "Nani cacciatori (veterani)",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 58,
      "Grado Sfida (CR)": 3,
@@ -1297,7 +1297,7 @@
     },
     {
      "mostro": "wight",
-     "ITA": "wight",
+     "ITA": "Wight",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": "3",
@@ -1313,7 +1313,7 @@
     },
     {
      "mostro": "Troll",
-     "ITA": "troll",
+     "ITA": "Troll",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 84,
      "Grado Sfida (CR)": 5,
@@ -1329,7 +1329,7 @@
     },
     {
      "mostro": "Earth Elemental (elementali della terra)",
-     "ITA": "elementali della terra",
+     "ITA": "Elementali della terra",
      "Classe Armatura (CA)": 17,
      "Punti Ferita (PF)": 126,
      "Grado Sfida (CR)": 5,
@@ -1345,7 +1345,7 @@
     },
     {
      "mostro": "Salamander",
-     "ITA": "salamandre",
+     "ITA": "Salamandre",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 90,
      "Grado Sfida (CR)": 5,
@@ -1361,7 +1361,7 @@
     },
     {
      "mostro": "Phase Spider (ragni-fase)",
-     "ITA": "ragni-fase",
+     "ITA": "Ragni-fase",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 32,
      "Grado Sfida (CR)": 3,
@@ -1377,7 +1377,7 @@
     },
     {
      "mostro": "Piercer (cuspidi letali)",
-     "ITA": "cuspidi letali",
+     "ITA": "Cuspidi letali",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 22,
      "Grado Sfida (CR)": 1,
@@ -1393,7 +1393,7 @@
     },
     {
      "mostro": "Hell Hound (segugi infernali)",
-     "ITA": "segugi infernali",
+     "ITA": "Segugi infernali",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 3,
@@ -1409,7 +1409,7 @@
     },
     {
      "mostro": "Chimera",
-     "ITA": "chimere",
+     "ITA": "Chimere",
      "Classe Armatura (CA)": 14,
      "Punti Ferita (PF)": 114,
      "Grado Sfida (CR)": 6,
@@ -1425,7 +1425,7 @@
     },
     {
      "mostro": "Drider",
-     "ITA": "drider",
+     "ITA": "Drider",
      "Classe Armatura (CA)": 19,
      "Punti Ferita (PF)": 123,
      "Grado Sfida (CR)": 6,
@@ -1441,7 +1441,7 @@
     },
     {
      "mostro": "Drow Mage",
-     "ITA": "drow maghi",
+     "ITA": "Drow maghi",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 7,
@@ -1457,7 +1457,7 @@
     },
     {
      "mostro": "Mind Flayer",
-     "ITA": "mind flayer",
+     "ITA": "Mind flayer",
      "Classe Armatura (CA)": 15,
      "Punti Ferita (PF)": 71,
      "Grado Sfida (CR)": 7,
@@ -1473,7 +1473,7 @@
     },
     {
      "mostro": "Spore Servant Quaggoth (quaggoth servitori delle spore)",
-     "ITA": "quaggoth servitori delle spore",
+     "ITA": "Quaggoth servitori delle spore",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 2,
@@ -1489,7 +1489,7 @@
     },
     {
      "mostro": "Ogre",
-     "ITA": "ogre",
+     "ITA": "Ogre",
      "Classe Armatura (CA)": 11,
      "Punti Ferita (PF)": 59,
      "Grado Sfida (CR)": 2,
@@ -1505,7 +1505,7 @@
     },
     {
      "mostro": "Quaggoth",
-     "ITA": "quaggoth",
+     "ITA": "Quaggoth",
      "Classe Armatura (CA)": 13,
      "Punti Ferita (PF)": 45,
      "Grado Sfida (CR)": 2,
