@@ -38,6 +38,8 @@ fetch('monster2.json')
                 optionCA.value = monster['Classe Armatura (CA)'];
                 optionCA.textContent = monster.ITA;
                 optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
+                optionCA.setAttribute("PE", monster.PE);
+                optionCA.setAttribute("CR", monster["Grado Sfida (CR)"]);
                 selectCA.appendChild(optionCA);
 
             });
@@ -51,6 +53,8 @@ fetch('monster2.json')
                 optionCA.value = monster['Classe Armatura (CA)'];
                 optionCA.textContent = monster.mostro;
                 optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
+                optionCA.setAttribute("PE", monster.PE);
+                optionCA.setAttribute("CR", monster["Grado Sfida (CR)"]);
                 selectCA.appendChild(optionCA);
 
             });
@@ -105,7 +109,7 @@ function checkMonsterPF() {
         }
         else {
 
-            monsterPf.innerText = 'Morto';
+            monsterPf.innerText = `Morto ${selectedOption.getAttribute("PE")} PE`;
             monsterPf.classList.remove("bg-success");
             monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
         }
