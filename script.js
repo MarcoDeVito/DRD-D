@@ -164,7 +164,8 @@ totalDamage.addEventListener("input", () => {
 ita.addEventListener("input", () => {
 
     localStorage.setItem('ITA', ita.checked);
-    let itaSave = localStorage.getItem('ITA');
+    
+    location.reload();
 
 
 
