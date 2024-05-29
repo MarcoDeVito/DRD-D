@@ -9,9 +9,9 @@ fetch('monster2.json')
     .then(response => response.json())
     .then(data => {
         let itaSave = localStorage.getItem('ITA');
-        if(itaSave=='true'){
+        if (itaSave == 'true') {
 
-            ita.checked=true;
+            ita.checked = true;
             data.sort((a, b) => a['ITA'].localeCompare(b['ITA']));
             const selectCA = document.getElementById('monster-select-ca');
             data.forEach(monster => {
@@ -20,84 +20,84 @@ fetch('monster2.json')
                 optionCA.textContent = monster.ITA;
                 optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
                 selectCA.appendChild(optionCA);
-    
+
             });
         }
         else {
-            ita.checked=false;
+            ita.checked = false;
             data.sort((a, b) => a['mostro'].localeCompare(b['mostro']));
-        const selectCA = document.getElementById('monster-select-ca');
-        data.forEach(monster => {
-            const optionCA = document.createElement('option');
-            optionCA.value = monster['Classe Armatura (CA)'];
-            optionCA.textContent = monster.mostro;
-            optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
-            selectCA.appendChild(optionCA);
+            const selectCA = document.getElementById('monster-select-ca');
+            data.forEach(monster => {
+                const optionCA = document.createElement('option');
+                optionCA.value = monster['Classe Armatura (CA)'];
+                optionCA.textContent = monster.mostro;
+                optionCA.setAttribute("PF", monster['Punti Ferita (PF)']);
+                selectCA.appendChild(optionCA);
 
-        });
+            });
         }
-        
-
-        
 
 
-        
+
+
+
+
         let index = localStorage.getItem('Index');
         let Danni = localStorage.getItem('Danni');
         selected.selectedIndex = index
         if (Danni != 0) { totalDamage.value = Danni; }
-        let init=localStorage.getItem('Iniziativa');
-        
+        let init = localStorage.getItem('Iniziativa');
+
         if (init) {
-            diceRes.innerText=init
+            diceRes.innerText = init
             diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
         }
     });
 
 function checkMonsterCA() {
-    if(monsterNumber.value){
+    if (monsterNumber.value) {
 
         let selectedValue = parseInt(selected.value);
         let number = parseInt(document.getElementById('monster-number').value);
         let monsterCa = document.getElementById('result-ca');
-        
-        
-    
+
+
+
         if (number >= selectedValue) {
             monsterCa.innerText = 'Colpito';
             monsterCa.classList.remove("bg-danger");
             monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
-    
+
         }
         else {
-    
+
             monsterCa.innerText = 'Mancato';
             monsterCa.classList.remove("bg-success");
             monsterCa.classList.add("border", "rounded", "bg-danger", "p-2");
-    
+
         }
     }
 }
 
 function checkMonsterPF() {
-    if(totalDamage.value){
-        
+    if (totalDamage.value) {
+
         let selectedOption = selected.options[selected.selectedIndex];
         let extraInfoPF = selectedOption.getAttribute("PF");
-    
-    
+
+
         let totalDamage = parseInt(document.getElementById('total-damage').value);
-    
+
         let monsterPf = document.getElementById('result-pf');
         if (totalDamage < extraInfoPF) {
             monsterPf.innerText = 'Vivo';
             monsterPf.classList.remove("bg-danger");
             monsterPf.classList.add("border", "rounded", "bg-success", "p-2");
-    
-    
+
+
         }
         else {
-    
+
             monsterPf.innerText = 'Morto';
             monsterPf.classList.remove("bg-success");
             monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
@@ -118,14 +118,23 @@ function dice() {
 
 }
 function somma() {
-    totalDamage = document.querySelector('#total-damage')
-    sommaDanno = document.querySelector('#nuovoDanno')
-    dannoTotale = parseInt(totalDamage.value);
-    nuovoDanno = parseInt(sommaDanno.value);
+
+    let sommaDanno = document.querySelector('#nuovoDanno')
+    if(sommaDanno.value){
+
+        let dannoTotale = parseInt(totalDamage.value);
+        nuovoDanno = parseInt(sommaDanno.value);
     
-    totalDamage.value = dannoTotale + nuovoDanno;
-    sommaDanno.value = 0;
-    localStorage.setItem('Danni', totalDamage.value);
+        if (isNaN(dannoTotale)) {
+            totalDamage.value =  nuovoDanno;
+        }
+        else{
+    
+            totalDamage.value =  dannoTotale + nuovoDanno;
+        }
+        sommaDanno.value = '';
+        localStorage.setItem('Danni', totalDamage.value);
+    }
 }
 
 function clearDamage() {
@@ -156,47 +165,47 @@ ita.addEventListener("input", () => {
 
     localStorage.setItem('ITA', ita.checked);
     let itaSave = localStorage.getItem('ITA');
-    
+
 
 
 })
 
-totalDamage.addEventListener("keypress", function(event) {
+totalDamage.addEventListener("keypress", function (event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      document.querySelector("#btnIsDead").click();
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.querySelector("#btnIsDead").click();
     }
-      });
+});
 
-  monsterNumber.addEventListener("keypress", function(event) {
+monsterNumber.addEventListener("keypress", function (event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Enter") {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      document.querySelector("#btnIsHit").click();
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.querySelector("#btnIsHit").click();
     }
-  });
+});
 
-totalDamage.addEventListener("keydown", function(event) {
+totalDamage.addEventListener("keydown", function (event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Delete") {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      document.querySelector("#btnClearDamage").click();
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.querySelector("#btnClearDamage").click();
     }
-  });
+});
 
-  monsterNumber.addEventListener("keydown", function(event) {
+monsterNumber.addEventListener("keydown", function (event) {
     // If the user presses the "Enter" key on the keyboard
     if (event.key === "Delete") {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      document.querySelector("#btnClearHit").click();
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.querySelector("#btnClearHit").click();
     }
-  });
+});
