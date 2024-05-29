@@ -29,6 +29,6 @@ Le **one-shot** giocate con i nani di **Karlsberg** dentro le montagne saranno f
     * I riposi brevi durano 5 o 10 minuti e i giocatori possono farli senza il rischio di essere attaccati.
     * La borsa del guaritore se usata porta il *PG incapacitato* a **1 PF** come se i personaggi avessero il talento Guaritore.
     * lo *stregone* con un delay di 5 azioni può lanciare un incantesimo che crea un tunnel con una lunghezza corrispondente al suo movimento. 
-    * Il *guerriero* ha come equipaggiamento 2 arpioni uniti da una corda. Può usare un'azione per lanciare un arpione ad una distanza di massimo 18 metri creando così una fune che tutti i *PG* possono attraversare al costo di 3 metri di movimento se la fune va verso il basso, 1/2 del loro movimento se è orizzontale e al costo di tutto il loro movimento 
+    * Il *guerriero* ha come equipaggiamento 2 arpioni uniti da una corda. Può usare un'azione per lanciare un arpione ad una distanza di massimo 18 metri creando così una fune che tutti i *PG* possono attraversare al costo di 3 metri di movimento se la fune va verso il basso, 1/2 del loro movimento se è orizzontale e al costo di tutto il loro movimento se è verso l'alto.
 
 
