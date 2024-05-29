@@ -3,6 +3,24 @@ let totalDamage = document.querySelector('#total-damage')
 let monsterNumber = document.querySelector('#monster-number')
 let diceRes = document.getElementById('dice-result');
 let ita = document.querySelector('#ita');
+let itaSave = localStorage.getItem('ITA');
+if (itaSave == 'true') {
+
+    ita.checked = true;
+}
+else {
+    ita.checked = false;
+}
+let index = localStorage.getItem('Index');
+        let Danni = localStorage.getItem('Danni');
+        selected.selectedIndex = index
+        if (Danni != 0) { totalDamage.value = Danni; }
+        let init = localStorage.getItem('Iniziativa');
+
+        if (init) {
+            diceRes.innerText = init
+            diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
+        }
 
 
 fetch('monster2.json')
@@ -11,7 +29,7 @@ fetch('monster2.json')
         let itaSave = localStorage.getItem('ITA');
         if (itaSave == 'true') {
 
-            ita.checked = true;
+
             data.sort((a, b) => a['ITA'].localeCompare(b['ITA']));
             const selectCA = document.getElementById('monster-select-ca');
             data.forEach(monster => {
@@ -24,7 +42,7 @@ fetch('monster2.json')
             });
         }
         else {
-            ita.checked = false;
+            
             data.sort((a, b) => a['mostro'].localeCompare(b['mostro']));
             const selectCA = document.getElementById('monster-select-ca');
             data.forEach(monster => {
@@ -37,21 +55,7 @@ fetch('monster2.json')
             });
         }
 
-
-
-
-
-
-        let index = localStorage.getItem('Index');
-        let Danni = localStorage.getItem('Danni');
-        selected.selectedIndex = index
-        if (Danni != 0) { totalDamage.value = Danni; }
-        let init = localStorage.getItem('Iniziativa');
-
-        if (init) {
-            diceRes.innerText = init
-            diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
-        }
+       
     });
 
 function checkMonsterCA() {
@@ -120,17 +124,17 @@ function dice() {
 function somma() {
 
     let sommaDanno = document.querySelector('#nuovoDanno')
-    if(sommaDanno.value){
+    if (sommaDanno.value) {
 
         let dannoTotale = parseInt(totalDamage.value);
         nuovoDanno = parseInt(sommaDanno.value);
-    
+
         if (isNaN(dannoTotale)) {
-            totalDamage.value =  nuovoDanno;
+            totalDamage.value = nuovoDanno;
         }
-        else{
-    
-            totalDamage.value =  dannoTotale + nuovoDanno;
+        else {
+
+            totalDamage.value = dannoTotale + nuovoDanno;
         }
         sommaDanno.value = '';
         localStorage.setItem('Danni', totalDamage.value);
@@ -164,7 +168,7 @@ totalDamage.addEventListener("input", () => {
 ita.addEventListener("input", () => {
 
     localStorage.setItem('ITA', ita.checked);
-    
+
     location.reload();
 
 
