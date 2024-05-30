@@ -1,3 +1,4 @@
+// localStorage.clear
 let diceRes = document.getElementById('dice-result');
 let ita = document.querySelector('#ita')
 let itaSave = localStorage.getItem('ITA');
@@ -36,11 +37,33 @@ function addInstance() {
     localStorage.setItem('InstanceIndex', instanceIndex);
 
     let instanceHTML = `
+    
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cancellazione</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sei sicuro di Voler cancellare la Card Mostro?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" onclick="removeInstance(${instanceIndex})" class="btn btn-danger">Cancella</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="col-12 col-lg-4" id="instance-${instanceIndex}">
         <form id="monster-form-${instanceIndex}" class="mt-5 border border-black rounded p-lg-3">
             <div class="d-flex justify-content-end mb-3 ms-auto">
             <input type="text" class="form-control me-auto" style="width: 75%;" name="" id="mosterName-${instanceIndex}">
-                <button type="button" class="btn btn-outline-danger" onclick="removeInstance(${instanceIndex})">X</button>
+            <!-- Button trigger modal -->
+
+                <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">X</button>
             </div>
             <div class="mb-3">
                 <label for="monster-select-ca-${instanceIndex}" class="form-label">Scegli un mostro (CA):</label>
@@ -63,7 +86,7 @@ function addInstance() {
             <div class="input-group mb-3">
                 <button id="btnClearDamage-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="clearDamage(${instanceIndex})">X</button>
                 <input type="number" id="total-damage-${instanceIndex}" class="form-control" min="0" placeholder="0">
-                <button id="sommaDanno" class="btn btn-outline-secondary" type="button" onclick="somma(${instanceIndex})">+</button>
+                <button id="sommaDanno-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="somma(${instanceIndex})">+</button>
                 <input type="number" id="nuovoDanno-${instanceIndex}" class="form-control" min="0" placeholder="0">
             </div>
             <div class="mb-3">
@@ -146,10 +169,23 @@ function initializeInstance(index) {
 
     selected.addEventListener("input", () => {
         localStorage.setItem(`Index-${index}`, selected.selectedIndex);
+        let stringanome = mosterName.value
+        let stringaArray= stringanome.split(" ")
+        let num = stringaArray[stringaArray.length-1];
+        let nome= selected.options[selected.selectedIndex].text;
+        // Ottiene il testo dell'opzione selezionata
+        nome= tagliaStringa(nome)
+        mosterName.value =nome+" "+num
+        localStorage.setItem(`Nome-${index}`, mosterName.value)
+        
+
+        
+
     });
 
     totalDamage.addEventListener("input", () => {
         localStorage.setItem(`Danni-${index}`, totalDamage.value);
+        
     });
 
 
@@ -283,3 +319,19 @@ function dice() {
     localStorage.setItem('Iniziativa', diceRes.innerText);
 
 }
+
+function tagliaStringa(input) {
+    // Trova l'indice della prima parentesi aperta
+    const indiceParentesi = input.indexOf('(');
+    
+    // Se non trova la parentesi aperta, restituisce l'intera stringa
+    if (indiceParentesi === -1) {
+        return input;
+    }
+    
+    // Restituisce la sottostringa prima della parentesi aperta
+    return input.substring(0, indiceParentesi).trim();
+}
+
+
+localStorage.clear
