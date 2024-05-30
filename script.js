@@ -36,8 +36,8 @@ function addInstance() {
     localStorage.setItem('InstanceIndex', instanceIndex);
 
     let instanceHTML = `
-    <div class="col-12 col-lg-6" id="instance-${instanceIndex}">
-        <form id="monster-form-${instanceIndex}" class="mt-5 border border-black rounded p-3">
+    <div class="col-12 col-lg-4" id="instance-${instanceIndex}">
+        <form id="monster-form-${instanceIndex}" class="mt-5 border border-black rounded p-lg-3">
             <div class="d-flex justify-content-end mb-3 ms-auto">
             <input type="text" class="form-control me-auto" style="width: 75%;" name="" id="mosterName-${instanceIndex}">
                 <button type="button" class="btn btn-outline-danger" onclick="removeInstance(${instanceIndex})">X</button>
