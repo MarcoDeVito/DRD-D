@@ -27,6 +27,7 @@ if (init) {
 }
 
 let numIstanceSaved = localStorage.getItem('InstanceIndex') || 0;
+document.querySelector('#numMostri').innerHTML = numIstanceSaved
 instanceIndex = 0;
 for (let i = 0; i < numIstanceSaved; i++) {
     addInstance();
@@ -35,6 +36,8 @@ for (let i = 0; i < numIstanceSaved; i++) {
 function addInstance() {
     instanceIndex++;
     localStorage.setItem('InstanceIndex', instanceIndex);
+    let numIstanceSaved = localStorage.getItem('InstanceIndex') || 0;
+    document.querySelector('#numMostri').innerHTML = numIstanceSaved
 
     let instanceHTML = `
     
@@ -170,22 +173,22 @@ function initializeInstance(index) {
     selected.addEventListener("input", () => {
         localStorage.setItem(`Index-${index}`, selected.selectedIndex);
         let stringanome = mosterName.value
-        let stringaArray= stringanome.split(" ")
-        let num = stringaArray[stringaArray.length-1];
-        let nome= selected.options[selected.selectedIndex].text;
+        let stringaArray = stringanome.split(" ")
+        let num = stringaArray[stringaArray.length - 1];
+        let nome = selected.options[selected.selectedIndex].text;
         // Ottiene il testo dell'opzione selezionata
-        nome= tagliaStringa(nome)
-        mosterName.value =nome+" "+num
+        nome = tagliaStringa(nome)
+        mosterName.value = nome + " " + num
         localStorage.setItem(`Nome-${index}`, mosterName.value)
-        
 
-        
+
+
 
     });
 
     totalDamage.addEventListener("input", () => {
         localStorage.setItem(`Danni-${index}`, totalDamage.value);
-        
+
     });
 
 
@@ -323,12 +326,12 @@ function dice() {
 function tagliaStringa(input) {
     // Trova l'indice della prima parentesi aperta
     const indiceParentesi = input.indexOf('(');
-    
+
     // Se non trova la parentesi aperta, restituisce l'intera stringa
     if (indiceParentesi === -1) {
         return input;
     }
-    
+
     // Restituisce la sottostringa prima della parentesi aperta
     return input.substring(0, indiceParentesi).trim();
 }
