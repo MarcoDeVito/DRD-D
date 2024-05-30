@@ -26,7 +26,7 @@ if (init) {
 }
 
 let numIstanceSaved = localStorage.getItem('InstanceIndex') || 0;
-instanceIndex=0;
+instanceIndex = 0;
 for (let i = 0; i < numIstanceSaved; i++) {
     addInstance();
 }
@@ -37,10 +37,10 @@ function addInstance() {
 
     let instanceHTML = `
     <div class="col-12 col-lg-6" id="instance-${instanceIndex}">
-        <form id="monster-form-${instanceIndex}">
-            <div class="d-flex justify-content-between mb-3">
-                
-                <button type="button" class="btn btn-danger" onclick="removeInstance(${instanceIndex})">Cancella Istanza</button>
+        <form id="monster-form-${instanceIndex}" class="mt-5 border border-black rounded p-3">
+            <div class="d-flex justify-content-end mb-3 ms-auto">
+            <input type="text" class="form-control me-auto" style="width: 75%;" name="" id="mosterName-${instanceIndex}">
+                <button type="button" class="btn btn-outline-danger" onclick="removeInstance(${instanceIndex})">X</button>
             </div>
             <div class="mb-3">
                 <label for="monster-select-ca-${instanceIndex}" class="form-label">Scegli un mostro (CA):</label>
@@ -77,7 +77,7 @@ function addInstance() {
     initializeInstance(instanceIndex);
 
 
-        
+
 }
 
 function initializeInstance(index) {
@@ -85,7 +85,10 @@ function initializeInstance(index) {
     let totalDamage = document.getElementById(`total-damage-${index}`);
     let monsterNumber = document.getElementById(`monster-number-${index}`);
     let sommaDanno = document.getElementById(`nuovoDanno-${index}`);
-    
+    let mosterName = document.querySelector(`#mosterName-${index}`);
+
+
+
 
     totalDamage.addEventListener("keypress", function (event) {
         // If the user presses the "Enter" key on the keyboard
@@ -93,51 +96,51 @@ function initializeInstance(index) {
             // Cancel the default action, if needed
             event.preventDefault();
             // Trigger the button element with a click
-            document.querySelector("#btnIsDead-"+index).click();
+            document.querySelector("#btnIsDead-" + index).click();
         }
     });
-    
+
     monsterNumber.addEventListener("keypress", function (event) {
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
             // Cancel the default action, if needed
             event.preventDefault();
             // Trigger the button element with a click
-            document.querySelector("#btnIsHit-"+index).click();
+            document.querySelector("#btnIsHit-" + index).click();
         }
     });
     sommaDanno.addEventListener("keypress", function (event) {
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
-            if(sommaDanno.value){
+            if (sommaDanno.value) {
                 event.preventDefault();
-                document.querySelector("#sommaDanno-"+index).click();
+                document.querySelector("#sommaDanno-" + index).click();
             }
-            else{
+            else {
                 event.preventDefault();
-                document.querySelector("#btnIsDead-"+index).click();
+                document.querySelector("#btnIsDead-" + index).click();
             }
-           
+
         }
     });
-    
+
     totalDamage.addEventListener("keydown", function (event) {
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Delete") {
             // Cancel the default action, if needed
             event.preventDefault();
             // Trigger the button element with a click
-            document.querySelector("#btnClearDamage-"+index).click();
+            document.querySelector("#btnClearDamage-" + index).click();
         }
     });
-    
+
     monsterNumber.addEventListener("keydown", function (event) {
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Delete") {
             // Cancel the default action, if needed
             event.preventDefault();
             // Trigger the button element with a click
-            document.querySelector("#btnClearHit-"+index).click();
+            document.querySelector("#btnClearHit-" + index).click();
         }
     });
 
@@ -149,9 +152,18 @@ function initializeInstance(index) {
         localStorage.setItem(`Danni-${index}`, totalDamage.value);
     });
 
-    
-    
-    
+
+    nome = localStorage.getItem(`Nome-${index}`)
+    if (nome) { mosterName.value = nome }
+    else {
+        mosterName.value = `Mostro ${index}`
+
+    }
+    localStorage.setItem(`Nome-${index}`, mosterName.value)
+
+    mosterName.addEventListener("input", () => {
+        localStorage.setItem(`Nome-${index}`, mosterName.value)
+    })
 
     let Danni = localStorage.getItem(`Danni-${index}`);
     if (Danni != 0) { totalDamage.value = Danni; }
@@ -180,7 +192,7 @@ function initializeInstance(index) {
             selected.selectedIndex = selectedIndex;
         });
 
-      
+
 }
 
 function removeInstance(index) {
@@ -188,19 +200,22 @@ function removeInstance(index) {
     localStorage.removeItem(`Index-${index}`);
     localStorage.removeItem(`Danni-${index}`);
     localStorage.removeItem(`ITA-${index}`);
+    localStorage.removeItem(`Nome-${index}`);
     instanceIndex--
-    localStorage.setItem("InstanceIndex",instanceIndex)
-    let i=index+1
+    localStorage.setItem("InstanceIndex", instanceIndex)
+    let i = index + 1
 
-    while(localStorage.getItem(`Index-${i}`))
-        {
-           console.log('eccomi'+i);
-           localStorage.setItem(`Index-${i-1}`,localStorage.getItem(`Index-${i}`));
-           localStorage.removeItem(`Index-${i}`)
-           localStorage.setItem(`Danni-${i-1}`,localStorage.getItem(`Danni-${i}`));
-           localStorage.removeItem(`Danni-${i}`)
-           i++
-        }
+    while (localStorage.getItem(`Nome-${i}`)) {
+        console.log('eccomi' + i);
+        localStorage.setItem(`Index-${i - 1}`, localStorage.getItem(`Index-${i}`));
+        localStorage.removeItem(`Index-${i}`)
+        localStorage.setItem(`Danni-${i - 1}`, localStorage.getItem(`Danni-${i}`));
+        localStorage.removeItem(`Danni-${i}`)
+        localStorage.setItem(`Nome-${i - 1}`, localStorage.getItem(`Nome-${i}`));
+        localStorage.removeItem(`Nome-${i}`)
+        i++
+    }
+    location.reload();
 }
 
 function checkMonsterCA(index) {
@@ -266,5 +281,5 @@ function dice() {
     diceRes.innerText = result;
     diceRes.classList.add("border", "rounded", "bg-danger", "p-2");
     localStorage.setItem('Iniziativa', diceRes.innerText);
-    
+
 }
