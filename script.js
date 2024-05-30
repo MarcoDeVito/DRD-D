@@ -60,7 +60,7 @@ function addInstance() {
     </div>
   </div>
 </div>
-    <div class="col-12 col-lg-4" id="instance-${instanceIndex}">
+    <div class="col-12 col-lg-3" id="instance-${instanceIndex}">
         <form id="monster-form-${instanceIndex}" class="mt-5 border border-black rounded p-lg-3">
             <div class="d-flex justify-content-end mb-3 ms-auto">
             <input type="text" class="form-control me-auto" style="width: 75%;" name="" id="mosterName-${instanceIndex}">
