@@ -266,11 +266,11 @@ function checkMonsterCA(index) {
         document.getElementById(`monster-number-${index}`).value = '';
 
         if (number >= selectedValue) {
-            monsterCa.innerText = 'Colpito';
+            monsterCa.innerText = number+': Colpito';
             monsterCa.classList.remove("bg-danger");
             monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
         } else {
-            monsterCa.innerText = 'Mancato';
+            monsterCa.innerText =number+': Mancato';
             monsterCa.classList.remove("bg-success");
             monsterCa.classList.add("border", "rounded", "bg-danger", "p-2");
         }
