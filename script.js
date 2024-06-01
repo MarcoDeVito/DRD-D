@@ -269,6 +269,8 @@ function checkMonsterCA(index) {
             monsterCa.innerText = number+': Colpito';
             monsterCa.classList.remove("bg-danger");
             monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
+            document.querySelector(`#nuovoDanno-${index}`).focus()
+
         } else {
             monsterCa.innerText =number+': Mancato';
             monsterCa.classList.remove("bg-success");
@@ -303,6 +305,7 @@ function somma(index) {
         document.getElementById(`total-damage-${index}`).value = dannoTotale + sommaDanno;
         document.getElementById(`nuovoDanno-${index}`).value = '';
         localStorage.setItem(`Danni-${index}`, document.getElementById(`total-damage-${index}`).value);
+        document.querySelector(`#btnIsDead-${index}`).click()
     }
 }
 
