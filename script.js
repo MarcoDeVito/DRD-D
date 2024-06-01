@@ -66,7 +66,7 @@ function addInstance() {
             <input type="text" class="form-control me-auto" style="width: 75%;" name="" id="mosterName-${instanceIndex}">
             <!-- Button trigger modal -->
 
-                <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">X</button>
+                <button tabindex="-1" id="morteMostro-${instanceIndex}" type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">X</button>
             </div>
             <div class="mb-3">
                 <label for="monster-select-ca-${instanceIndex}" class="form-label">Scegli un mostro (CA):</label>
@@ -76,24 +76,24 @@ function addInstance() {
                 <label for="monster-number-${instanceIndex}" class="form-label">Colpo:</label>
             </div>
             <div class="input-group mb-3">
-                <button id="btnClearHit-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="clearHit(${instanceIndex})">X</button>
+                <button tabindex="-1" id="btnClearHit-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="clearHit(${instanceIndex})">X</button>
                 <input type="number" id="monster-number-${instanceIndex}" class="form-control" min="1" max="40" placeholder="1">
             </div>
             <div class="mb-3">
-                <button type="button" id="btnIsHit-${instanceIndex}" class="btn btn-primary w-100" onclick="checkMonsterCA(${instanceIndex})">Colpisce?</button>
+                <button tabindex="-1" type="button" id="btnIsHit-${instanceIndex}" class="btn btn-primary w-100" onclick="checkMonsterCA(${instanceIndex})">Colpisce?</button>
                 <p id="result-ca-${instanceIndex}" class="mt-2 text-center"></p>
             </div>
             <div class="d-block">
                 <label for="total-damage-${instanceIndex}" class="form-label">Danno Totale:</label>
             </div>
             <div class="input-group mb-3">
-                <button id="btnClearDamage-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="clearDamage(${instanceIndex})">X</button>
-                <input type="number" id="total-damage-${instanceIndex}" class="form-control" min="0" placeholder="0">
-                <button id="sommaDanno-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="somma(${instanceIndex})">+</button>
+                <button tabindex="-1" id="btnClearDamage-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="clearDamage(${instanceIndex})">X</button>
+                <input tabindex="-1" type="number" id="total-damage-${instanceIndex}" class="form-control" min="0" placeholder="0">
+                <button tabindex="-1" id="sommaDanno-${instanceIndex}" class="btn btn-outline-secondary" type="button" onclick="somma(${instanceIndex})">+</button>
                 <input type="number" id="nuovoDanno-${instanceIndex}" class="form-control" min="0" placeholder="0">
             </div>
             <div class="mb-3">
-                <button type="button" id="btnIsDead-${instanceIndex}" class="btn btn-primary w-100" onclick="checkMonsterPF(${instanceIndex})">E' Morto?</button>
+                <button tabindex="-1" type="button" id="btnIsDead-${instanceIndex}" class="btn btn-primary w-100" onclick="checkMonsterPF(${instanceIndex})">E' Morto?</button>
                 <p id="result-pf-${instanceIndex}" class="mt-2 text-center"></p>
             </div>
         </form>
@@ -265,7 +265,7 @@ function checkMonsterCA(index) {
         let monsterCa = document.getElementById(`result-ca-${index}`);
         document.getElementById(`monster-number-${index}`).value = '';
 
-        if (number >= selectedValue) {
+        if (number >= selectedValue || number==20) {
             monsterCa.innerText = number+': Colpito';
             monsterCa.classList.remove("bg-danger");
             monsterCa.classList.add("border", "rounded", "bg-success", "p-2");
@@ -294,6 +294,7 @@ function checkMonsterPF(index) {
             monsterPf.innerText = `Morto ${selectedOption.getAttribute("PE")} PE`;
             monsterPf.classList.remove("bg-success");
             monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
+            document.querySelector(`#morteMostro-${index}`).click()
         }
     }
 }
