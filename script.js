@@ -290,10 +290,13 @@ function checkMonsterPF(index) {
             monsterPf.innerText = 'Vivo';
             monsterPf.classList.remove("bg-danger");
             monsterPf.classList.add("border", "rounded", "bg-success", "p-2");
+            
+            document.querySelector(`#monster-number-${index}`).focus()
         } else {
             monsterPf.innerText = `Morto ${selectedOption.getAttribute("PE")} PE`;
             monsterPf.classList.remove("bg-success");
             monsterPf.classList.add("border", "rounded", "bg-danger", "p-2");
+            
             document.querySelector(`#morteMostro-${index}`).click()
         }
     }
